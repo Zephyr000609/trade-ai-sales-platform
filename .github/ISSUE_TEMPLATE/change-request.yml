@@ -1,0 +1,29 @@
+name: 需求变更
+description: 修改页面、字段、流程或业务规则
+title: "[Change] "
+body:
+  - type: textarea
+    id: current
+    attributes:
+      label: 当前行为
+    validations:
+      required: true
+  - type: textarea
+    id: desired
+    attributes:
+      label: 期望行为
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: 影响范围
+      description: 数据、历史记录、AI Prompt、筛选规则、API、页面和测试。
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 验收标准
+    validations:
+      required: true
